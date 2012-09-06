@@ -1,259 +1,378 @@
 <div style="text-align:center"><span style="font-size:small">Nachstehend findet Ihr alle Befehle die im Spiel verfügbar sind mit einer kurzen Beschreibung.</span></div>
-<font size="2">
-<div style="text-align:center">(In <font color="#ff9900">orange</font> geschriebene Befehle sind nur für <font color="#ff9900">Admins</font> verfügbar.)</div>
-</font>
-
-<h2><font size="3"><u>Essentials</u></font></h2>
-<div>Lernt für euch relevante Befehle am besten auswendig oder benutzt /help im Spiel um sie dort</div>
-<div>anzeigen zu lassen.<br>
-<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<div style="text-align:center"><font size="2">(In <font color="#ff9900">orange</font> geschriebene Befehle sind nur für <font color="#ff9900">Admins</font> verfügbar.)</font></div>
+<br>
+<h2 style="text-align:left"><font size="3"><u>Cenotaph</u></font></h2>
+<p style="text-align:left"><font size="2">Dieses Plugin hinterlässt bei Tod eine Kiste oder auch eine große Kiste, je nachdem wie voll euer Inventar ist und beschützt somit eure Gegenstände bis ihr wieder zu euren Todesort zurück gekehrt seid und eure Gegenstände eingesammelt habt.</font></p>
+<table border="1">
+<thead>
+<tr>
+<th style="text-align:center;width:250px"><b>Befehl</b></th>
+<th style="text-align:center;width:370px"><b>Beschreibung</b></th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="2" style="text-align:left"><i><font size="2"><b><a href="https://sites.google.com/site/mineholicbuilders/tutorials/cenotaph">Tutorial</a>:</b> Hier erfahrt ihr wie ihr Cenotaph benutzt.<br><b><font color="#ff9900">Admin-Befehle</font>:</b> Bitte Groß- und Kleinschreibung beachten!</font></i></td>
+</tr>
+</tfoot>
 <tbody>
 <tr>
-<td style="width:151px;height:19px">&nbsp;/afk</td>
-<td style="width:269px;height:19px">&nbsp;de-/aktivier den AFK-Modus</td>
-<td style="width:174px;height:19px">&nbsp;/ping</td>
-<td style="width:282px;height:19px">&nbsp;schreibt "Pong!" - Latenztest(?)</td>
+<td>/cenlist</td>
+<td>Gibt euch eine nummerierte Liste eurer Cenotaphs aus.</td>
 </tr>
 <tr>
-<td style="width:151px;height:39px"><strike>&nbsp;/balance<br>
-&nbsp;/balancetop</strike></td>
-<td style="width:269px;height:39px">&nbsp;zeigt economy-Guthaben an&nbsp;<br>
-&nbsp;zeigt eco-Rangliste</td>
-<td style="width:174px;height:39px">&nbsp;<strike>/pay [Spieler] [Menge]</strike></td>
-<td style="width:282px;height:39px">&nbsp;zahlt "Menge" eco-Guthaben an<br>
-&nbsp;"Spieler"</td>
+<td>/cenfind &lt;Index&gt;</td>
+<td>Zeigt euch im Chat die Richtung des Cenotaphs an und falls ihr einen Kompass besitzt, zeigt euch dieser ebenfalls die Richtung an.</td>
 </tr>
 <tr>
-<td style="width:151px;height:39px">&nbsp;/compass</td>
-<td style="width:269px;height:39px">&nbsp;zeigt Kompassdaten (zB: NW 75°)</td>
-<td style="width:174px;height:39px">&nbsp;/powertool [/befehl]</td>
-<td style="width:282px;height:39px">&nbsp;bindet [/befehl] an gehaltenen<br>
-&nbsp;Gegenstand (rechtsklicken)</td>
+<td>/centime &lt;Index&gt;</td>
+<td>Teilt euch mit wie lange euer Cenotaph noch geschützt ist und wie lange dieser noch bestehen bleibt.</td>
 </tr>
 <tr>
-<td style="width:151px;height:39px">&nbsp;/depth</td>
-<td style="width:269px;height:39px">&nbsp;zeigt aktuelle Höhe über NN<br>
-&nbsp;in MC liegt NN in Höhe 64&nbsp;</td>
-<td style="width:174px;height:39px">&nbsp;/powertooltoggle</td>
-<td style="width:282px;height:39px">&nbsp;de-/aktiviert temporär alle <br>
-&nbsp;<i>Powertools</i>&nbsp;</td>
+<td>/cenreset</td>
+<td>Lässt euren Kompass wieder in Richtung Spawn ausrichten.</td>
 </tr>
 <tr>
-<td style="width:151px;height:55px">&nbsp;/getpos</td>
-<td style="width:269px;height:55px">&nbsp;zeigt Positionsdaten&nbsp;(Welt, X,Y,Z,<br>
-&nbsp;Drehung, &nbsp;Blickwinkel)</td>
-<td style="width:174px;height:55px">&nbsp;/time</td>
-<td style="width:282px;height:55px">&nbsp;zeigt Ingame-Uhrzeit an<br>
-&nbsp;(XX:XX, X:XX AM|PM, XX Ticks)</td>
+<td><font color="#ff9900">/cenadmin list</font></td>
+<td>Gibt eine Liste von allen Spielern mit bestehenden Cenotaphs aus.</td>
 </tr>
 <tr>
-<td style="width:151px;height:19px">&nbsp;/help</td>
-<td style="width:269px;height:19px">&nbsp;listet verfügbare Befehle auf</td>
-<td style="width:174px;height:19px">&nbsp;/seen [Spieler]</td>
-<td style="width:282px;height:19px">&nbsp;zeigt wie lang "Spieler" offline ist</td>
+<td><font color="#ff9900">/cenadmin list &lt;Spieler&gt;</font></td>
+<td>Listet alle vorhandenen Cenotaphs des angegebenen &lt;Spieler&gt; auf.</td>
 </tr>
 <tr>
-<td style="width:151px;height:39px">&nbsp;/helpop [Text]</td>
-<td style="width:269px;height:39px">&nbsp;sendet "Text" an einen <br>
-&nbsp;verfügbaren Admin</td>
-<td style="width:174px;height:39px">&nbsp;/rules</td>
-<td style="width:282px;height:39px">&nbsp;zeigt die rules.txt des Servers an<br>
-&nbsp;(z.zT. nicht definiert)</td>
+<td><font color="#ff9900">/cenadmin find &lt;Spieler&gt; &lt;Index&gt;</font></td>
+<td>Zeigt die Richtung für den Cenotaph von &lt;Spieler&gt; mit dem &lt;Index&gt; an.</td>
 </tr>
 <tr>
-<td style="width:151px;height:59px">&nbsp;/itemdb</td>
-<td style="width:269px;height:59px">&nbsp;zeigt Name, Item-ID <br>
-&nbsp;(&amp; Haltbarkeit) eines&nbsp;Gegen- <br>
-&nbsp;standes in der Hand an.</td>
-<td style="width:174px;height:59px">&nbsp;/tpaccept</td>
-<td style="width:282px;height:59px">&nbsp;akzeptiert Teleportanfragen</td>
+<td><font color="#ff9900">/cenadmin remove &lt;Spieler&gt; &lt;Index&gt;</font></td>
+<td>Zerstört den Cenotaph von &lt;Spieler&gt; mit dem &lt;Index&gt; und lässt den gesamten Inhalt des Cenotaphs auf den Boden fallen.</td>
 </tr>
 <tr>
-<td style="width:151px;height:39px">&nbsp;/list</td>
-<td style="width:269px;height:39px">&nbsp;listet aktuelle, maximale und <br>
-&nbsp;Namen der Spieler auf</td>
-<td style="width:174px;height:39px">&nbsp;/tpdeny</td>
-<td style="width:282px;height:39px">&nbsp;lehnt Teleportanfragen ab</td>
-</tr>
-<tr>
-<td style="width:151px;height:79px">&nbsp;/mail &lt;read | clear | send [Spieler] [Text] | sendall [Text]&gt;</td>
-<td style="width:269px;height:79px">&nbsp;Liest | Löscht | sendet "Spieler" &nbsp;<br>
-&nbsp;"Text" | sendet Allen "Text"<br>
-&nbsp;(als) Offlinenachricht.</td>
-<td style="width:174px;height:79px">&nbsp;/tpa [Name]</td>
-<td style="width:282px;height:79px">&nbsp;Teleportanfrage an "Spieler"<br>
-&nbsp;selbst -&gt; Ziel<br>
-&nbsp;muss mit /tpaccept vom Ziel<br>
-&nbsp;bestätigt werden.</td>
-</tr>
-<tr>
-<td style="width:151px;height:39px">&nbsp;/me [Text]</td>
-<td style="width:269px;height:39px">&nbsp;Chat: Text in 3. Person beginnend <br>
-&nbsp;mit eigenem Spielernamen.</td>
-<td style="width:174px;height:39px"><strike>&nbsp;/tpahere [Name]</strike></td>
-<td style="width:282px;height:39px">&nbsp;TP-Anfrage an "Spieler"<br>
-&nbsp;selbst &lt;- Ziel &nbsp;(/tpaccept)</td>
-</tr>
-<tr>
-<td style="width:151px;height:39px">&nbsp;/motd</td>
-<td style="width:269px;height:39px">&nbsp;zeigt MotD.txt (Einlogmeldung)</td>
-<td style="width:174px;height:39px">&nbsp;/sethome [Name]</td>
-<td style="width:282px;height:39px">&nbsp;setzt Homepunkt "Name"<br>
-&nbsp;ohne Text oder durch Bett "bed"</td>
-</tr>
-<tr>
-<td style="width:151px;height:39px">&nbsp;/msg [Spieler] <br>
-&nbsp;[Text]</td>
-<td style="width:269px;height:39px">&nbsp;sendet <i>Flüster</i>- "Text" an "Spieler"</td>
-<td style="width:174px;height:39px">&nbsp;/home [Name]</td>
-<td style="width:282px;height:39px">&nbsp;TP zu Homepunkt "Name"<br>
-&nbsp;(wenn nur 1 existiert reicht /home)&nbsp;</td>
-</tr>
-<tr>
-<td style="width:151px;height:19px">&nbsp;/r [Text]</td>
-<td style="width:269px;height:19px">&nbsp;Antwortet auf letztes <i>Flüstern</i></td>
-<td style="width:174px;height:19px">&nbsp;/delhome [Name]</td>
-<td style="width:282px;height:19px">&nbsp;löscht Homepunkt "Name"</td>
-</tr>
-<tr>
-<td style="width:151px;height:39px">&nbsp;/nick [Nick]</td>
-<td style="width:269px;height:39px">&nbsp;Ändert Namen im Chat zu "Nick"</td>
-<td style="width:174px;height:39px">&nbsp;<strike>/back</strike></td>
-<td style="width:282px;height:39px">&nbsp;macht einen TP rückgängig (auch <br>
-&nbsp;Tod zählt als TP)</td>
-</tr>
-<tr>
-<td style="width:151px;height:19px">&nbsp;/suicide
-</td>
-<td style="width:269px;height:19px">&nbsp;selbsterklärend und unnötig(?)&nbsp;
-</td>
-<td style="width:174px;height:19px">&nbsp;/warp [Name]</td>
-<td style="width:282px;height:19px">&nbsp;TP zum Warp "Name"</td>
-</tr>
-</tbody>
-</table>
-<div>
-<div><font color="#ff9900">Admin</font>-Commands folgen später. Gestrichene Befehle wurden entfernt, da sie entweder den Sinn des Spiels oder eines Plugins beeinträchtigen oder anderweitig stören. Desweiteren benutzen wir keine economy, daher wurden diese Befehle ebenfalls entfernt.</div>
-</div>
-<h2><font size="3"><u>LWC</u></font></h2>
-<div><font size="3">Ein Plugin das eure Kisten (und andere Blöcke) schützt. Beim Erstellen, Ändern und Entfernen von Sicherungen muss erst der Befehl eingetippt, anschließend der Block mit der rechten Maustaste angeklickt werden.</font></div>
-<div><font size="3">Schaut euch auch das <a href="https://sites.google.com/site/mineholicbuilders/tutorials/lwc">Tutorial</a> an um mehr zu erfahren.</font></div>
-<div>
-<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
-<tbody>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/lwc</td>
-<td style="width:619px;height:19px">&nbsp;Listet alle Befehle im Chat auf.</td>
-</tr>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/cprivate</td>
-<td style="width:619px;height:19px">&nbsp;Erstellt eine private Sicherung.</td>
-</tr>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/cpublic</td>
-<td style="width:619px;height:19px">&nbsp;Erstellt eine öffentliche Sicherung.</td>
-</tr>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/cremove</td>
-<td style="width:619px;height:19px">&nbsp;Entfernt eine Sicherung die man selbst angelegt hat. <font color="#ff9900">Als Admin jede Sicherung.</font></td>
-</tr>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/cpassword &lt;Passwort&gt;</td>
-<td style="width:619px;height:19px">&nbsp;Erstellt eine Passwort-Sicherung. Jeder der das Passwort kennt hat Zugriff.</td>
-</tr>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/cunlock &lt;Passwort&gt;</td>
-<td style="width:619px;height:19px">&nbsp;Öffnet eine Passwort-Sicherung. Bleibt bis zum Ausloggen bestehen.</td>
-</tr>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/cinfo<span>&nbsp;&nbsp; &nbsp;</span></td>
-<td style="width:619px;height:19px">&nbsp;Nach Befehl klicken um Informationen zu einer Sicherung zu erhalten.</td>
-</tr>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/climits</td>
-<td style="width:619px;height:19px">&nbsp;Zeigt die Anzahl deiner Sicherungen an. (Aktuell/Maximal)</td>
-</tr>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/cmodify [Attribut(e)]</td>
-<td style="width:619px;height:19px">&nbsp;Ändert eine Sicherung. Siehe dazu ingame Informationen oder das Tutorial.</td>
-</tr>
-<tr>
-<td style="width:260px;height:21px">&nbsp;/lwc mode &lt;persist/droptransfer&gt;</td>
-<td style="width:619px;height:21px">&nbsp;persist - sorgt dafür das der letzte LWC-Befehl immer weiter ausgeführt wird.<br>
-&nbsp;zB. um einen Nutzer Zugriff auf mehrere eigene Kisten zu geben.<br>
-&nbsp;droptransfer - unbekannt (nicht benutzen)</td>
-</tr>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/lwc flag &lt;Name&gt; &lt;on/off&gt;</td>
-<td style="width:619px;height:19px">&nbsp;Ändert bestimmte Eigenschaften einer Sicherung. Die Flag-Namen sind:<br>
-&nbsp;redstone, magnet, exemption, autoclose, allowexplosions<br>
-</td>
-</tr>
-<tr>
-<td style="width:260px;height:19px">&nbsp;/lwc menu &lt;basic/advanced&gt;</td>
-<td style="width:619px;height:19px">&nbsp;Ändert das Layout (keine Änderung festgestellt)</td>
-</tr>
-</tbody>
-</table>
-<font color="#ff9900">&nbsp;Admin</font>-Commands zu LWC sind hier nicht gelistet.
-</div>
-<h2><font size="3"><u>Cenotaph</u></font></h2>
-<div><font size="3">Wie Ihr Cenotaph benutzt, erfahrt Ihr im <a href="https://sites.google.com/site/mineholicbuilders/tutorials/cenotaph">Tutorial</a>.</font></div>
-<div>
-<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
-<tbody>
-<tr>
-<td style="width:387px;height:22px">&nbsp;/cenlist</td>
-<td style="width:497px;height:22px"> Gibt euch eine nummerierte Liste eurer Cenotaphs.</td>
-</tr>
-<tr>
-<td style="width:387px;height:39px">&nbsp;/cenfind &lt;Nummer&gt;</td>
-<td style="width:497px;height:39px">Zeigt im Chat die Richtung des Cenotaphs an. Wenn ihr einen Kompass habt zeigt dieser ebenfalls die Richtung an.</td>
-</tr>
-<tr>
-<td style="width:387px;height:39px">&nbsp;/centime &lt;Nummer&gt;</td>
-<td style="width:497px;height:39px">Teilt euch mit wie lange euer Cenotaph noch besteht und wie lange er noch geschützt ist.</td>
-</tr>
-<tr>
-<td style="width:387px;height:19px">&nbsp;/cenreset</td>
-<td style="width:497px;height:19px">Lässt euren Kompass wieder normal funktionieren.</td>
-</tr>
-<tr>
-<td style="width:387px;height:19px"><font color="#ff9900">&nbsp;/cenadmin list</font></td>
-<td style="width:497px;height:19px">Gibt eine Liste aller bestehenden Cenotaphs.</td>
-</tr>
-<tr>
-<td style="width:387px;height:39px">&nbsp;<font color="#ff9900">/cenadmin list &lt;Spieler&gt;</font><br>
-&nbsp;(Groß-/Kleinschreibung beachten)</td>
-<td style="width:497px;height:39px">Listet alle Cenotaphs von &lt;Spieler&gt;</td>
-</tr>
-<tr>
-<td style="width:387px;height:39px"><font color="#ff9900">&nbsp;/cenadmin find &lt;Spieler&gt; &lt;Nummer&gt;<br>
-</font>&nbsp;(Groß-/Kleinschreibung beachten)</td>
-<td style="width:497px;height:39px">Zeigt die Richtung für Cenotaph &lt;Nummer&gt; von&nbsp;&lt;Spieler&gt; an.</td>
-</tr>
-<tr>
-<td style="width:387px;height:39px">&nbsp;<font color="#ff9900">/cenadmin remove &lt;Spieler&gt; &lt;Nummer&gt;<br>
-</font>&nbsp;(Groß-/Kleinschreibung beachten)
-</td>
-<td style="width:497px;height:39px">Zerstört Cenotaph &lt;Nummer&gt; von &lt;Spieler&gt; und lässt den Inhalt auf den Boden fallen.</td>
-</tr>
-<tr>
-<td style="width:387px;height:39px"><font color="#ff9900">&nbsp;/cenadmin time &lt;Player&gt; &lt;Nummer&gt;<br>
-</font>&nbsp;(Groß-/Kleinschreibung beachten)
-</td>
-<td style="width:497px;height:39px">Zeigt die verbleibende Zeit von &lt;Spieler&gt;'s Cenotaph &lt;Nummer&gt;<br>
-an und wie lange der Schutz noch besteht.</td>
-</tr>
-<tr>
-<td style="width:387px;height:19px"><font color="#ff9900">&nbsp;/cenadmin version</font></td>
-<td style="width:497px;height:19px">Zeigt aktuelle Version an und prüft auf Update.</td>
+<td><font color="#ff9900">/cenadmin time &lt;Spieler&gt; &lt;Index&gt;</font></td>
+<td>Zeigt die verbleibende Zeit des Cenotaph von &lt;Spieler&gt; mit dem &lt;Index&gt; an und wie lange der Schutz des Cenotaph noch bestehen bleibt.</td>
 </tr>
 </tbody>
 </table>
 <br>
-<br style="color:rgb(20,20,20);font-family:Georgia,Times New Roman,Times,serif;font-size:12px;font-style:italic;line-height:16px">
+<h2 style="text-align:left"><font size="3"><u>Dynmap</u></font></h2>
+<p style="text-align:left"><font size="2">Eine Google Maps ähnliche Karte für Minecraft Server, die im Browser angezeigt werden kann und die Positionen der Spieler live überträgt.</font></p>
+<table border="1">
+<thead>
+<tr>
+<th style="text-align:center;width:250px"><b>Befehl</b></th>
+<th style="text-align:center;width:370px"><b>Beschreibung</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/dynmap hide</td>
+<td>Versteckt einen Spieler auf der Dynmap.</td>
+</tr>
+<tr>
+<td>/dynmap show</td>
+<td>Zeigt einen Spieler auf der Dynmap (wieder) an.</td>
+</tr>
+<tr>
+<td>/dynmap sendtoweb &lt;Nachricht&gt;</td>
+<td>Sendet ausschließlich eine Nachricht zu allen Webbenutzern, welche im normalen Minecraftchat nicht angezeigt wird.</td>
+</tr>
+</tbody>
+</table>
 <br>
-</div>
-<div dir="ltr"></div>
-</div>
+<h2 style="text-align:left"><font size="3"><u>Essentials</u></font></h2>
+<p style="text-align:left"><font size="2">Eine Sammlung nützlicher Befehle und Funktionen für Bukkit.</font></p>
+<table border="1">
+<thead>
+<tr>
+<th style="text-align:center;width:250px"><b>Befehl</b></th>
+<th style="text-align:center;width:370px"><b>Beschreibung</b></th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="2" style="text-align:left"><i><font size="2">Lernt für euch relevante Befehle am besten auswendig oder benutzt /help im Spiel um sie dort anzeigen zu lassen.</font></i></td>
+</tr>
+</tfoot>
+<tbody>
+<!-- Allgemeine Befehle -->
+<tr>
+<td>/afk</td>
+<td>Aktiviert und deaktiviert den AFK-Modus.</td>
+</tr>
+<tr>
+<td>/compass ; /direction</td>
+<td>Zeigt die aktuelle Kompassrichtung (z.B. S (180 Grad)) an.</td>
+</tr>
+<tr>
+<td>/depth</td>
+<td>Zeigt die aktuelle Höhe über NN an. In Minecraft liegt der NN in Höhe 64.</td>
+</tr>
+<tr>
+<td>/getpos ; /coords ; /position</td>
+<td>Zeigt die aktuellen Positionsdaten (Welt, X,Y,Z, Drehung,  Blickwinkel) an.</td>
+</tr>
+<tr>
+<td>/help</td>
+<td>Listet alle verfügbaren Befehle auf.</td>
+</tr>
+<tr>
+<td>/helpop &lt;Nachricht&gt;</td>
+<td>Sendet eine &lt;Nachricht&gt; an einen verfügbaren Admin.</td>
+</tr>
+<tr>
+<td>/news ; /einfo ; /ifo</td>
+<td>Zeigt Informationen und Neuigkeiten zum Server an.</td>
+</tr>
+<tr>
+<td>/itemdb</td>
+<td>Zeigt den Gegenstandsname, Gegenstands-ID (& Haltbarkeit) eines Gegenstandes in der Hand an.</td>
+</tr>
+<tr>
+<td>/list ; /who ; /online</td>
+<td>Listet aktuelle, maximale und Namen der Spieler auf.</td>
+</tr>
+<tr>
+<td>/mail [read|clear|send &lt;Spieler&gt; &lt;Nachricht&gt;]</td>
+<td>Liest | Löscht | sendet einen &lt;Spieler&gt; eine &lt;Nachricht&gt; (als) Offlinenachricht.</td>
+</tr>
+<tr>
+<td>/me &lt;Nachricht&gt;</td>
+<td>Sendet eine &lt;Nachricht&gt; in 3. Person in den Chat beginnend mit dem eigenen Spielernamen.</td>
+</tr>
+<tr>
+<td>/motd</td>
+<td>Zeigt die MOTD (Message of the Day) an, welche automatisch beim einloggen aufm dem Server angezeigt wird.</td>
+</tr>
+<tr>
+<td>/msg &lt;Spieler&gt; &lt;Nachricht&gt; ; /tell &lt;Spieler&gt; &lt;Nachricht&gt;</td>
+<td>Sendet einen anderen Spieler eine flüster/private Nachricht.</td>
+</tr>
+<tr>
+<td>/near &lt;Radius&gt;</td>
+<td>Zeigt alle Spieler an, welche sich im angegebenen &lt;Radius&gt; sich befinden. Der Standardwert für den <Radius> beträgt 100m.</td>
+</tr>
+<tr>
+<td>/nick &lt;Nickname&gt;</td>
+<td>Ändert deinen Namen zu den von dir angegebenen &lt;Nickname&gt; für den Chat und die Spielerliste.</td>
+</tr>
+<tr>
+<td>/reply &lt;Nachricht&gt; ; /r &lt;Nachricht&gt;</td>
+<td>Antwortet auf die letzte flüster/private Nachricht.</td>
+</tr>
+<tr>
+<td>/realname &lt;Spieler&gt;</td>
+<td>Zeigt dir den richtigen Spielername an, wenn dieser einen Nicknamen benutzt.</td>
+</tr>
+<tr>
+<td>/rules</td>
+<td>Zeigt dir die Regeln zum Server an.</td>
+</tr>
+<tr>
+<td>/seen &lt;Spieler&gt;</td>
+<td>Zeigt an wann ein Spieler zuletzt online war.</td>
+</tr>
+<tr>
+<td>/whois &lt;Spieler&gt;</td>
+<td>Zeigt von einen &lt;Spieler&gt; das aktuelle Economy-Guthaben, den Realnamen (falls Nickname verwendet wird) und den AFK-Status an.</td>
+</tr>
+<tr>
+<td>/clearinventory</td>
+<td>Erlaubt es dir dein Inventar zu löschen.</td>
+</tr>
+<tr>
+<td>/suicide</td>
+<td>Erlaubt es dir dich selbst zu töten.</td>
+</tr>
+<!-- Economy Befehle -->
+<tr>
+<td>/balance ; /bal ; /money</td>
+<td>Zeigt das aktuelle Economy-Guthaben an.</td>
+</tr>
+<tr>
+<td>/balancetop ; /baltop</td>
+<td>Zeigt die Economy-Rangliste an.</td>
+</tr>
+<!-- Teleport Befehle -->
+<tr>
+<td>/spawn</td>
+<td>Teleportiert dich zum Spawnpunkt.</td>
+</tr>
+<tr>
+<td>/home &lt;Name&gt;</td>
+<td>Teleportiert dich zu deinen angegebenen Homepunkt. Falls du nur einen Homepunkt besitzt, dann reicht es aus den Befehl /home zu benutzen.</td>
+</tr>
+<tr>
+<td>/sethome &lt;Name&gt;</td>
+<td>Setzt einen neuen Homepunkt mit dem von dir angegebenen Namen.</td>
+</tr>
+<tr>
+<td>/delhome &lt;Name&gt;</td>
+<td>Löscht einen Homepunkt mit dem von dir angegebenen Namen.</td>
+</tr>
+<tr>
+<td>/tpask &lt;Spieler&gt; ; /tpa &lt;Spieler&gt;</td>
+<td>Sendet eine Teleportanfrage zum angegebenen &lt;Spieler&gt;.</td>
+</tr>
+<tr>
+<td>/tpaccept ; /tpyes</td>
+<td>Akkzeptiert eine Teleportanfrage des anfragenden Spielers und teleportiert ihn an deine Position.</td>
+</tr>
+<tr>
+<td>/tpdeny ; /tpno</td>
+<td>Lehnt eine Teleportanfrage des anfragenden Spielers ab.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h2 style="text-align:left"><font size="3"><u>LWC</u></font></h2>
+<p style="text-align:left"><font size="2">LWC schützt einzelne Blöcke, das sowohl den Block selbst und die Inhalte der Kisten, Öfen und Spender schützt. Es kann auch alle anderen Blöcke schützen und standardmäßig werden auch Türen (Holz + Eisen) geschützt, Schilder und Falltüren.</font></p>
+<table border="1">
+<thead>
+<tr>
+<th style="text-align:center;width:250px"><b>Befehl</b></th>
+<th style="text-align:center;width:370px"><b>Beschreibung</b></th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="2" style="text-align:left"><i><font size="2"><b><a href="https://sites.google.com/site/mineholicbuilders/tutorials/lwc">Tutorial</a>:</b> Hier erfahrt ihr wie ihr LWC benutzt.</font></i></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td>/lwc</td>
+<td>Listet alle verfügbaren Befehle von LWC auf.</td>
+</tr>
+<tr>
+<td>/cprivate</td>
+<td>Erstellt eine private Sicherung.</td>
+</tr>
+<tr>
+<td>/cpublic</td>
+<td>Erstellt eine öffentliche Sicherung.</td>
+</tr>
+<tr>
+<td>/cpassword &lt;Passwort&gt;</td>
+<td>Erstellt eine passwortgesicherte Sicherung.</td>
+</tr>
+<tr>
+<td>/cunlock &lt;Passwort&gt;</td>
+<td>Entriegelt eine passwortgesicherte Sicherung.</td>
+</tr>
+<tr>
+<td>/cmodify &lt;Spielername&gt; ; /cmodify g:&lt;Gruppenname&gt;</td>
+<td>Modifiziert eine bestehende Sicherung, fügt Spieler und/oder Gruppen hinzu.</td>
+</tr>
+<tr>
+<td>/cmodify -&lt;Spielername&gt; ; /cmodify -g:&lt;Gruppenname&gt;</td>
+<td>Entfernt Zugriffsrechte eines Spielers und/oder einer Gruppe</td>
+</tr>
+<tr>
+<td>/cmodify @&lt;Spielername&gt; ; /cmodify @g:&lt;Gruppenname&gt;</td>
+<td>Modifiziert eine bestehende Sicherung, fügt Adminrechte für Spieler und/oder Gruppen hinzu. Der Besitzer kann nicht geändert werden. </td>
+</tr>
+<tr>
+<td>/cremove</td>
+<td>Entfernt eine Sicherung. <font color="#ff9900">Admins können jede Sicherung damit entfernen.</font></td>
+</tr>
+<tr>
+<td>/cinfo</td>
+<td>Zeigt Informationen über eine Sicherung an.</td>
+</tr>
+<tr>
+<td>/climits</td>
+<td>Zeigt deine maximale Anzahl an Sicherungen an.</td>
+</tr>
+<tr>
+<td>/lwc flag magnet &lt;on/off&gt;</td>
+<td>Kisten und andere Blöcke mit Inventar können magnetisiert werden, wodurch sie mit einen bestimmten Intervall Gegenstände in einen bestimmten Radius um sich herum aufnehmen.</td>
+</tr>
+<tr>
+<td>/lwc flag redstone &lt;on/off&gt;</td>
+<td>"/lwc flag redstone on" Blockiert das Redstone Signal zum gesicherten Block.</td>
+</tr>
+<tr>
+<td>/lwc flag autoclose &lt;on/off&gt;</td>
+<td>"/lwc flag autoclose off" Schaltet das automatische schließen der Türen ab.</td>
+</tr>
+<tr>
+<td>/lwc mode persist</td>
+<td>Der nächste eigegebene LWC-Befehl bleibt bestehen und kann beliebig oft auf andere Kisten und Blöcke ausgeführt werden.</td>
+</tr>
+<tr>
+<td>/lwc remove modes</td>
+<td>Alle verwendeten Modi werden entfernt.</td>
+</tr>
+<tr>
+<td><font color="#ff9900">/lwc admin view &lt;ID&gt;</font></td>
+<td>Zeigt das Inventar eines Blocks via ID an.</td>
+</tr>
+<tr>
+<td><font color="#ff9900">/lwc admin find &lt;Spieler&gt;</font></td>
+<td>Zeigt alle Sicherungen eines Spielers an.</td>
+</tr>
+<tr>
+<td><font color="#ff9900">/lwc admin forceowner &lt;Spieler&gt;</font></td>
+<td>Ändert den Besitzer einer Sicherung.</td>
+</tr>
+<tr>
+<td><font color="#ff9900">/lwc admin remove &lt;ID&gt;</font></td>
+<td>Entfernt eine Sicherung via ID, welche man per /cinfo heraus finden kann.</td>
+</tr>
+<tr>
+<td><font color="#ff9900">/lwc admin purge &lt;Spieler&gt;</font></td>
+<td>Entfernt alle Sicherungen eines Spielers.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h2 style="text-align:left"><font size="3"><u>MC Jobs</u></font></h2>
+<p style="text-align:left"><font size="2">Ein Plugin zum erlernen von Berufen in Minecraft mit welchen man dann Geld verdienen kann, welches man dann in Shops ausgeben kann.</font></p>
+<table border="1">
+<thead>
+<tr>
+<th style="text-align:center;width:250px"><b>Befehl</b></th>
+<th style="text-align:center;width:370px"><b>Beschreibung</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/jobs list</td>
+<td>Listet alle auf dem Server verfügbaren Berufe auf, wieviele Berufe man erlernt hat, wieviele Berufe man maximal erlernen kann und welche Berufe standard Berufe sind.</td>
+</tr>
+<tr>
+<td>/jobs join &lt;Jobname&gt;</td>
+<td>Mit diesen Befehl erlernst du den ausgewählten Beruf. Grau geschriebene Berufe kann man nicht erlernen.</td>
+</tr>
+<tr>
+<td>/jobs leave &lt;Jobname&gt;</td>
+<td>Mit diesen Befehl kündigst du den ausgewählten Beruf. Grau geschriebene Berufe kann man nicht kündigen.</td>
+</tr>
+<tr>
+<td>/jobs &lt;Jobname&gt;</td>
+<td>Zeigt dir detailierte Informationen zum ausgewählten Beruf an. Du erfährst wieviel Erfahrung du für welchen Block erhälst, welchen Level du in diesen Beruf hast und wie hoch dein Lohn je Block ist.</td>
+</tr>
+<tr>
+<td>/jobs show &lt;Jobname&gt;</td>
+<td>Zeigt dir eine Nachricht an für den ausgewählten Beruf für je Aktion die durchgeführt wird mit dem Verdienst an.</td>
+</tr>
+<tr>
+<td>/jobs hide &lt;Jobname&gt;</td>
+<td>Blendet die Nachrichten für den ausgewählten Beruf für je Aktion für den Verdienst wieder aus.</td>
+</tr>
+<tr>
+<td><font color="#ff9900">/jadm add &lt;Spieler/Gruppe&gt; &lt;Jobname&gt;</font></td>
+<td>Fügt einen Spieler oder eine Gruppe zum ausgewählten Beruf hinzu.</td>
+</tr>
+<tr>
+<td><font color="#ff9900">/jadm remove &lt;Spieler/Gruppe&gt; &lt;Jobname&gt;</font></td>
+<td>Entfernt einen Spieler oder eine Gruppe aus dem ausgewählten Beruf.</td>
+</tr>
+<tr>
+<td><font color="#ff9900">/jadm list &lt;Spieler/Gruppe&gt; &lt;Jobname&gt;</font></td>
+<td>Listet den ausgewählten Spieler oder Gruppe auf und zeigt alle Berufe an die er/diese besitzt.</td>
+</tr>
+</tbody>
+</table>
+<br>
